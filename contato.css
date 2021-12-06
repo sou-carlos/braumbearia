@@ -1,0 +1,68 @@
+main{
+margin-left: 2rem;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 20%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.botao-enviar{
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+}
+
+.botao-enviar:hover{
+    background: green ;
+    color: white;
+    cursor: pointer;
+    transition: 0.6s all;
+    transform:scale(1.04);
+}
+
+table{
+    margin: 40px 0px 20px 0px ;
+}
+
+thead{
+    background: rgb(46, 46, 46);
+    color: white;
+    font-weight: bold;
+
+}
+
+td, th{
+    border: 1px solid #000;
+    padding: 15px 8px;
+}
+
+@media screen and (max-width: 480px) {
+
+    main{
+        margin-left: 1rem;
+    }
+    
+    .input-padrao{
+        width: 80%;
+    }
+
+}

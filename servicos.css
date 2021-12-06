@@ -1,0 +1,57 @@
+
+.servico-conteiner{
+
+    width: 80%;
+    margin: 0 auto;
+
+}
+.servico-itens{
+    position: relative;
+    border: 2px solid black;
+    display: inline-block;
+    border-radius: 8px;
+    width: 30%;
+    vertical-align: top;
+    margin: 10px;
+    text-align: center ;
+    padding: 20px 20px;
+    box-sizing: border-box; /*O tamanho interno não interfere no tamanho definido para a borda*/
+    
+}
+
+.servico-itens:hover{
+    border-color:chocolate;
+    border-width: 5px;
+}
+
+
+
+.item-title{
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.item-descricao{
+    font-size: 18px;
+}
+
+.item-preco{
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    
+    .servico-itens{
+        display: block;
+        width: 100%;
+        
+        margin: 10px 0 15px 0;
+    }
+
+
+}
+
