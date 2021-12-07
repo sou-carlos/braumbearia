@@ -42,10 +42,6 @@ nav a:hover{
     border-bottom: 2px solid  #00A0BA;  
 }
 
-.titulo-principal{
-    margin-bottom: 20px;
-}
-
 .banner{
     width: 100%;
     margin: 0;
@@ -86,19 +82,20 @@ em strong{
 }
 /*Top, right, bottom and left*/
 .conteudo-texto{
-    padding: 1rem 3rem 3rem 3rem;
+    padding-bottom: 2rem;
 }
 
 .titulo-principal{
     text-align: center;
-    margin-top: 0;
     font-size: 2rem;
-    padding: 0.5rem;
+    font-weight: bold;
+    padding: 2rem 0 2rem 0;
+    
 }
 
 .mapa{
     text-align: center;
-    padding: 3rem 0;
+    padding-bottom: 3rem;
 }
 
 .mapa p {
@@ -116,8 +113,8 @@ em strong{
 }
 
 .item_da_lista:before{
-    content: "🟊";
-    color: yellow;
+    content: "❆";
+    color: #00A0BA;
     margin-right: 5px;
 }
 
@@ -129,9 +126,8 @@ em strong{
     background:#111;
     color: white;
     margin: 1rem auto;
-    padding: 20px;
+    padding-bottom: 2rem;
     text-align: center;
-    padding: 3rem 0;
 }
 
 .conteudo-beneficios{
@@ -179,6 +175,11 @@ footer{
     header{
         text-align: center;
     }
+
+    .logo{
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
     
     .video{
         width: 100%;
@@ -195,7 +196,7 @@ footer{
     }
 
     .lista_beneficios{
-        width: 100%;
+        width: 90%;
         display: block;
         margin-left: 1rem;
         margin-bottom: 20px;
