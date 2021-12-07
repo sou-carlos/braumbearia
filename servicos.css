@@ -7,7 +7,7 @@
 }
 .servico-itens{
     position: relative;
-    border: 2px solid black;
+    border: 2px solid #111;
     display: inline-block;
     border-radius: 8px;
     width: 30%;
@@ -15,12 +15,19 @@
     margin: 10px;
     text-align: center ;
     padding: 20px 20px;
+    height: 420px;
     box-sizing: border-box; /*O tamanho interno não interfere no tamanho definido para a borda*/
     
 }
 
+.img-servicos{
+    width: 200px;
+    border-radius: 15px;
+    margin-bottom: 35px;
+}
+
 .servico-itens:hover{
-    border-color:chocolate;
+    border-color:#CFA75C;
     border-width: 5px;
 }
 
@@ -41,6 +48,11 @@
     font-weight: bold;
     font-size: 1.4rem;
     margin-top: 10px;
+    color: #CFA75C;
+}
+
+main{
+    height: 700px;
 }
 
 @media screen and (max-width: 480px) {
@@ -52,6 +64,10 @@
         margin: 10px 0 15px 0;
     }
 
+
+    main{
+        height: auto;
+    }
 
 }
 
