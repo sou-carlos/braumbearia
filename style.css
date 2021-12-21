@@ -1,9 +1,14 @@
+:root{
+    --cor-principal: #111;
+    --cor-secundaria: #00A0BA;
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
 
 header{
-    background: #111;
+    background: var(--cor-principal);
     padding: 15px 0px ;
 }
 
@@ -38,8 +43,8 @@ nav a {
 }
 
 nav a:hover{
-    color: #00A0BA;
-    border-bottom: 2px solid  #00A0BA;  
+    color: var(--cor-secundaria);
+    border-bottom: 2px solid  var(--cor-secundaria);  
 }
 
 .banner{
@@ -50,10 +55,12 @@ nav a:hover{
 
 .conteudo{
     margin: 1rem;
-    background:#CCC;
-    margin: 0;
-    
     background: #FEFEFE;
+}
+
+.conteudo, .conteudo-texto, .titulo-principal{
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .conteudo p{
@@ -93,16 +100,6 @@ em strong{
     
 }
 
-.mapa{
-    text-align: center;
-    padding-bottom: 3rem;
-}
-
-.mapa p {
-    margin: 0 0 2rem;
-}
-
-
 .missao{
     font-size: 1rem;
     line-height: 1;
@@ -114,7 +111,7 @@ em strong{
 
 .item_da_lista:before{
     content: "❆";
-    color: #00A0BA;
+    color:  var(--cor-secundaria);
     margin-right: 5px;
 }
 
@@ -123,11 +120,15 @@ em strong{
 }
 
 .beneficios{
-    background:#111;
+    background: var(--cor-principal);
     color: white;
     margin: 1rem auto;
     padding-bottom: 2rem;
     text-align: center;
+}
+
+.beneficios, .titulo-principal{
+    padding-top: 1rem;
 }
 
 .conteudo-beneficios{
@@ -146,6 +147,7 @@ em strong{
 
 .img_beneficios{
     width: 50%;
+    border: 5px solid  var(--cor-secundaria);
 }
 
 
@@ -153,10 +155,21 @@ em strong{
     width: 50%;
     margin: 1em auto;
     padding-top: 3rem;
+    
 }
 
 .conteudo-texto{
     text-align: center;
+}
+
+
+.mapa{
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.mapa p {
+    margin: 0 0 2rem;
 }
 
 footer{
@@ -176,9 +189,11 @@ footer{
         text-align: center;
     }
 
+
     .logo{
         padding-top: 10px;
         padding-bottom: 20px;
+        width: 80px;
     }
     
     .video{
@@ -203,7 +218,7 @@ footer{
     }
 
     .img_beneficios{
-        width: 100%;
+        width: calc(100% - 10px);
     }
     h1{
         text-align: center;

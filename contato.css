@@ -1,9 +1,12 @@
 main{
-margin-left: 2rem;
+    text-align: center;
+    align-items: center;
 }
 
 form{
-    margin: 40px 0;
+    margin:0;
+    display: inline-block;
+    text-align: left;
 }
 
 form label, form legend{
@@ -12,11 +15,15 @@ form label, form legend{
     margin-bottom: 10px;
 }
 
+.titulo-principal{
+    margin-bottom: 1rem;
+}
+
 .input-padrao{
     display: block;
     margin: 0 0 20px;
     padding: 15px 25px;
-    width: 30%;
+    width: 100%;
 }
 
 .checkbox{
@@ -47,7 +54,10 @@ form label, form legend{
 }
 
 table{
-    margin: 40px 0px 20px 0px ;
+    margin:auto ;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    
 }
 
 thead{
